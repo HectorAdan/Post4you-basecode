@@ -26,7 +26,6 @@ const ProfileRoute = () => (
 function App () {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-  
     { key: 'home', title: 'Home', icon:(props)=> <MaterialCommunityIcons {...props} name='fire' size={26}/> },
     { key: 'add', title: 'Add', icon:(props)=> <MaterialCommunityIcons {...props} name='plus' size={26}/> },
     { key: 'profile', title: 'Profile', icon:(props)=> <MaterialCommunityIcons {...props} name='account' size={26}/> },
@@ -35,7 +34,7 @@ function App () {
   const renderScene = BottomNavigation.SceneMap({
     home: HomeRoute,
     add: AddRoute,
-    profile: ProfileRoute,
+    profile: ProfileRoute
   });
 
   return (
